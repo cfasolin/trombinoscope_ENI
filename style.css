@@ -6,7 +6,7 @@
     --accent: #5b8fa8;
     --font-color: #1c2e38;
     --font-color-bis: #3a5f72;
-    --visited: #3a5f72;
+    --visited: #1b2c35;
 }
 
 :root.sombre {
@@ -15,7 +15,7 @@
     --accent: #5a9aa3;
     --font-color: #e8f4f6;
     --font-color-bis: #a8d5db;
-    --visited: #a8d5db;
+    --visited: #c2f6fd;
 }
 
 * {
@@ -35,6 +35,7 @@ body {
 
 a {
     color: var(--accent);
+    font-size: 1.2rem;
 }
 
 .en-tete {
@@ -152,6 +153,7 @@ thead {
 
 td {
     width: 10px;
+    padding: 10px 0;
 }
 
 /* AFFICHAGE GRID */
