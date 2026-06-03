@@ -18,7 +18,7 @@ Application web permettant de visualiser et d'explorer les apprenants de la prom
 
 - HTML5 sémantique
 - CSS3 (Flexbox, Grid, Variables CSS, Media Queries)
-- JavaScript Vanilla (fetch, localStorage, DOM)
+- JavaScript (fetch, localStorage, DOM)
 - JSON pour les données
 
 ## 📱 Responsive Design
