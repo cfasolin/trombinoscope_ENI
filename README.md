@@ -27,7 +27,7 @@ Le site est adapté aux différents formats d'écran (mobile, tablette, desktop)
 
 ## ♿ Accessibilité
 
-Score Lighthouse Accessibilité : **84/100**
+Score Lighthouse Accessibilité : **> 90/100**
 
 ## 🚀 Lancer le projet
 
