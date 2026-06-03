@@ -376,5 +376,9 @@ td {
         margin-top: 20px;
     }
 
+    #map {
+        min-width: 70vw;
+    }
+
 }
 
