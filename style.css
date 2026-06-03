@@ -1,0 +1,293 @@
+/* GENERAL */
+
+:root {
+    --bg-principal: #eef2f5;
+    --bg-secondaire: #d9e5ec;
+    --accent: #5b8fa8;
+    --font-color: #1c2e38;
+    --font-color-bis: #3a5f72;
+    --visited: #3a5f72;
+}
+
+:root.sombre {
+    --bg-principal: #1a2a2e;
+    --bg-secondaire: #243b40;
+    --accent: #5a9aa3;
+    --font-color: #e8f4f6;
+    --font-color-bis: #a8d5db;
+    --visited: #a8d5db;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 2%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle, var(--accent), var(--bg-secondaire));
+    color: var(--font-color);
+    justify-content: center;
+}
+
+
+a {
+    color: var(--accent);
+}
+
+.en-tete {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.en-tete img {
+    width: 5vw;
+    object-fit: contain;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #334042;
+    text-shadow: var(--bg-principal) 1px 0 3px, var(--bg-principal) 5px 0 8px, var(--bg-principal) 1px 0 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--font-color);
+}
+
+h2 {
+    text-align: center;
+    padding: 1vh 0;
+    background: linear-gradient(10deg, var(--accent), var(--bg-secondaire));
+    border: solid 1px;
+    box-shadow: 8px 8px 10px black;
+    min-width: 400px;
+    margin-bottom: 30px;
+    color: var(--font-color-bis);
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.nav-affichage li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+nav li a {
+    border: 1px solid black;
+    padding: 8px;
+    text-decoration: none;
+    box-shadow: 8px 8px 5px black;
+    background-color: var(--bg-principal);
+
+}
+
+nav li a:hover {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    box-shadow: none;
+
+}
+
+a:visited {
+    color: var(--visited);
+}
+
+
+
+/* PAGE D'ACCUEIL */
+
+.mid-page-main h2 {
+    margin-bottom: 0px;
+}
+
+.affichage {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+
+.mid-page-main {
+    max-width: 60vw;
+}
+
+
+.tableau {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    max-height: 65vh;
+    max-width: 60vw;
+    min-width: 400px;
+    background-color: var(--bg-secondaire);
+    border: solid 1px;
+    box-shadow: 8px 8px 10px black;
+
+}
+
+.table {
+    min-width: 400px;
+    max-width: 100%;
+
+}
+
+
+tbody tr:nth-child(even) {
+    background-color: var(--bg-principal);
+}
+
+
+thead {
+    text-align: left;
+    background-color: var(--bg-principal);
+}
+
+td {
+    width: 10px;
+}
+
+/* AFFICHAGE GRID */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.carte {
+    border: solid 1px black;
+    border-radius: 5px;
+    text-align: center;
+    padding: 1vh 0;
+    background-color: var(--bg-secondaire);
+    border: solid 1px;
+    box-shadow: 8px 8px 10px black;
+    color: var(--font-color-bis);
+}
+
+/* PAGE INFORMATION */
+
+.buttons {
+    margin-top: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+.info-formation {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 4%;
+
+}
+
+.bloc-infos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10vw;
+    text-align: center;
+
+}
+
+.description,
+.liens-utiles {
+    border: solid 1px;
+    width: 30%;
+    box-shadow: 8px 8px 10px black;
+    padding: 10px;
+    background-color: var(--bg-secondaire);
+}
+
+.description h3 {
+    padding-bottom: 10px;
+}
+
+.liens-utiles ul {
+    list-style: none;
+    flex-direction: column;
+    padding-bottom: 10px;
+    gap: 5px;
+}
+
+/* PREFERENCES */
+
+.inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+}
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .en-tete img {
+        display: none;
+    }
+
+    .inputs p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .bloc-infos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .en-tete {
+        flex-wrap: wrap;
+        flex-direction: columns;
+    }
+
+    nav {
+        margin: 5%;
+    }
+
+    .description,
+    .liens-utiles {
+        width: 80%;
+    }
+
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+    }
+
+    .mid-page-main {
+        max-width: 100%;
+    }
+
+    .tableau {
+        max-width: 80vw;
+    }
+
+    h2 {
+        max-width: 80vw;
+        margin: 0 auto;
+    }
+
+    .tableau {
+       margin: 0 auto;
+    }
+
+    .inputs {
+        margin-top: 20px;
+    }
+}
