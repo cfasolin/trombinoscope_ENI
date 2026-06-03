@@ -1,4 +1,7 @@
 const documentHTML = document.documentElement
+let apprenants = []
+
+
 
 // THEME
 const affichageTheme = localStorage.getItem("theme")
@@ -34,6 +37,15 @@ btnsRadio.forEach(btn => {
 })
 
 // FETCH
+
+fetch("promo.json")
+    .then(response => response.json())
+    .then(users => {
+        apprenants = users.apprenants
+        afficherApprenants()
+    })
+
+
 function afficherApprenants() {
     if (!conteneur) return
     conteneur.innerHTML = ""
@@ -46,31 +58,63 @@ function afficherApprenants() {
     <th>Détails</th>
 </tr></thead><tbody></tbody></table>`
 
-        fetch("promo.json")
-            .then(response => response.json())
-            .then(users => {
-                const ligneTableau = document.querySelector("tbody")
-                users.apprenants.forEach(element => {
-                    ligneTableau.innerHTML += `<tr>
+        const ligneTableau = document.querySelector("tbody")
+        apprenants.forEach(element => {
+            ligneTableau.innerHTML += `<tr>
                 <td>${element.nom}</td>
                 <td>${element.prenom}</td>
                 <td>${element.ville}</td>
-                <td><a href="#">Détails</a></td>
+                <td><a href="#" data-id="${element.id}" class="btnDetails">Détails</a></td>
             </tr>`
-                })
-            })
+        })
+
     } else {
-        fetch("promo.json")
-            .then(response => response.json())
-            .then(users => {
-                users.apprenants.forEach(element => {
-                    conteneur.innerHTML += `<div class="carte">
+        apprenants.forEach(element => {
+            conteneur.innerHTML += `<div class="carte">
                 <p>${element.nom} ${element.prenom}</p>
                 <p>${element.ville}</p>
-                <p><a href="#">Détails</a></p>
+                <p><a href="#" data-id="${element.id}" class="btnDetails">Détails</a></p>
             </div>`
-                })
-            })
+        })
     }
+
+    const modal = document.querySelector(".modal")
+    const btnDetails = document.querySelectorAll(".btnDetails")
+
+    btnDetails.forEach(btn => {
+        btn.addEventListener('click', function () {
+            const apprenant = apprenants.find(element => element.id === parseInt(btn.dataset.id))
+
+            modal.innerHTML =
+                ` <div class="info-modal">
+                    <img src="ressources/avatar/${apprenant.avatar}" alt="avatar">
+                    <div class="identite">
+                        <p class="nomprenom">${apprenant.nom}</p>
+                        <p class="nomprenom">${apprenant.prenom}</p>
+                        <p class="ville">${apprenant.ville}</p>
+                    </div>
+                </div>
+                <div class="anecdote">
+                <p>Anecdotes:</p>
+                "${apprenant.anecdotes}"</div>`
+
+            if (modal.style.display === "flex") {
+                modal.style.display = "none"
+            } else {
+                modal.style.display = "flex"
+            }
+
+        })
+    })
+
+    modal.addEventListener('click', function () {
+        modal.style.display = "none"
+    })
+
 }
+
 afficherApprenants()
+
+
+
+

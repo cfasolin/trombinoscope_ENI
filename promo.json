@@ -16,12 +16,12 @@
       "id": 2,
       "nom": "BEOUCHE",
       "prenom": "Naima",
-      "ville": "",
+      "ville": "Metz",
       "avatar": "naima.jpg",
-      "anecdotes": "",
+      "anecdotes": "Aventurière dans l’âme, je voyage comme Lara Croft… mais version vacances et sans danger.",
       "coordonnees": {
-        "latitude": "",
-        "longitude": ""
+        "latitude": 49.11693159032247, 
+        "longitude": 6.172884591649449
       }
     },
     {
@@ -44,7 +44,7 @@
       "avatar": "david.jpeg",
       "anecdotes": "On m'appelle Sinpou",
       "coordonnees": {
-        "latitude": 48.966159485713355, 
+        "latitude": 48.966159485713355,
         "longitude": 6.295111188814129
       }
     },
@@ -56,7 +56,7 @@
       "avatar": "hanae.png",
       "anecdotes": "Photo générée par l'IA",
       "coordonnees": {
-        "latitude": 45.04414271509987, 
+        "latitude": 45.04414271509987,
         "longitude": 5.052754741380824
       }
     },
@@ -68,7 +68,7 @@
       "avatar": "kendal.jpg",
       "anecdotes": "Est devenu oncle à 10 ans",
       "coordonnees": {
-        "latitude": 46.84494410336563, 
+        "latitude": 46.84494410336563,
         "longitude": -1.8778924757484452
       }
     },
@@ -80,7 +80,7 @@
       "avatar": "saadia.png",
       "anecdotes": "victime de relooking par ses nièces",
       "coordonnees": {
-        "latitude": 43.302620319926376, 
+        "latitude": 43.302620319926376,
         "longitude": 5.365267943861116
       }
     },
@@ -92,7 +92,7 @@
       "avatar": "rahmoun.png",
       "anecdotes": "Comme vous voyez sur la photo j'me prends pour Maitre Gims ou DJ Snake",
       "coordonnees": {
-        "latitude": 47.08057732767834, 
+        "latitude": 47.08057732767834,
         "longitude": 2.3928014914234854
       }
     },
@@ -116,7 +116,7 @@
       "avatar": "noah.jpeg",
       "anecdotes": "Fan inconditionnel de Sade",
       "coordonnees": {
-        "latitude": 48.07786162330732, 
+        "latitude": 48.07786162330732,
         "longitude": -0.7683252663462241
       }
     },
@@ -128,7 +128,7 @@
       "avatar": "karima.png",
       "anecdotes": "A failli tuer un patient en débranchant accidentellement un cathéter artériel pendant un stage (le médecin avec elle a vite réglé le problème)",
       "coordonnees": {
-        "latitude": 48.856629106618776, 
+        "latitude": 48.856629106618776,
         "longitude": 2.360816591389776
       }
     },
@@ -140,7 +140,7 @@
       "avatar": "camille.jpg",
       "anecdotes": "Quand j'étais en CE1, je lisais Tom-tom et nana et dans une histoire ils disaient que ceux qui avaient des lunettes étaient intelligents. Du coup, je voulais des lunettes et j'ai poussé le truc tellement loin que ma mère m'a emmené chez l'ophtalmo car je disais ne rien voir",
       "coordonnees": {
-        "latitude": 45.740155581181895, 
+        "latitude": 45.740155581181895,
         "longitude": -1.1061228494714384
       }
     },
@@ -152,7 +152,7 @@
       "avatar": "artiom.jpg",
       "anecdotes": "Je réfléchis tellement avant de choisir un film qu'il est déjà l'heure de dormir.",
       "coordonnees": {
-        "latitude": 48.91089370541141, 
+        "latitude": 48.91089370541141,
         "longitude": 2.5469589671682056
       }
     },
@@ -164,7 +164,7 @@
       "avatar": "yousra.jpg",
       "anecdotes": "Rejoint la réunion une heure après",
       "coordonnees": {
-        "latitude": 43.12157638148286, 
+        "latitude": 43.12157638148286,
         "longitude": 5.934447020996103
       }
     },
@@ -176,7 +176,7 @@
       "avatar": "julien.jpg",
       "anecdotes": "A essayé le Vademecum fluor et plante une fois, a vomi.",
       "coordonnees": {
-        "latitude": 50.722132579890875, 
+        "latitude": 50.722132579890875,
         "longitude": 3.159910263402591
       }
     },
@@ -184,12 +184,12 @@
       "id": 16,
       "nom": "LAFOUASSE",
       "prenom": "Valerie",
-      "ville": "",
-      "avatar": "",
-      "anecdotes": "",
+      "ville": "Surgères",
+      "avatar": "valerie.jpg",
+      "anecdotes": "j’adore cuisiner et j’ai un petit faible pour le chocolat, à tel point que chaque année je fais un atelier chocolat avec des amis, et on prépare des kilos de rochers pralinés et autres bouchées !",
       "coordonnees": {
-        "latitude": "",
-        "longitude": ""
+        "latitude": 46.103344081864165, 
+        "longitude": -0.7517171405868862
       }
     },
     {
@@ -200,7 +200,7 @@
       "avatar": "melanie.jpg",
       "anecdotes": "J'ai failli être aveugle après avoir reçu une fourchette dans l'œil à 6 ans mdrrrr",
       "coordonnees": {
-        "latitude": 45.78214534738525, 
+        "latitude": 45.78214534738525,
         "longitude": 4.921640366262656
       }
     },
@@ -212,7 +212,7 @@
       "avatar": "melina.jpg",
       "anecdotes": "Tout le temps en retard mais je me soigne !",
       "coordonnees": {
-        "latitude": 43.05276589851386, 
+        "latitude": 43.05276589851386,
         "longitude": 2.218059730628328
       }
     },
@@ -224,7 +224,7 @@
       "avatar": "lionel.jpg",
       "anecdotes": "Je suis DJ à côté, avec encore peu de dates pour le moment ça se développe lentement mais surement j'espère",
       "coordonnees": {
-        "latitude": 44.841296340748926, 
+        "latitude": 44.841296340748926,
         "longitude": -0.5860156350531975
       }
     },
@@ -236,7 +236,7 @@
       "avatar": "kentin.jpeg",
       "anecdotes": "Se plaint de ne plus avoir d'argent : achète un collector quand il sort. « Ça devrait prendre cinq minutes. » *Trois heures plus tard* « Bon, au moins j'ai appris quelque chose. »",
       "coordonnees": {
-        "latitude": 45.59725802105994, 
+        "latitude": 45.59725802105994,
         "longitude": 5.272971200590887
       }
     },
@@ -248,7 +248,7 @@
       "avatar": "remi.jpg",
       "anecdotes": "Cuisinier hors pair qui mange des pâtes au beurre. Se déguise en sorcière pour halloween.",
       "coordonnees": {
-        "latitude": 47.67805180275563, 
+        "latitude": 47.67805180275563,
         "longitude": -2.298943308244248
       }
     },
@@ -260,7 +260,7 @@
       "avatar": "yoan.jpg",
       "anecdotes": "Petit je rêvais d'être pilote d'avion.. N'ayant pas fait les études pour, je voyage en éco et non dans le cockpit !",
       "coordonnees": {
-        "latitude": 48.85747025716753, 
+        "latitude": 48.85747025716753,
         "longitude": 2.3487474855506854
       }
     },
@@ -272,7 +272,7 @@
       "avatar": "gatien.jpeg",
       "anecdotes": "N'a pas de photo de lui. Regarde l'intégrale de Rick and Morty en boucle.",
       "coordonnees": {
-        "latitude": 44.93363869346221, 
+        "latitude": 44.93363869346221,
         "longitude": 2.4484545322232734
       }
     }
