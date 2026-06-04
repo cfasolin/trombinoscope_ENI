@@ -19,13 +19,13 @@ if (conteneur && affichageDispo === "carte") { // vérifie que le conteneur exis
     conteneur.classList.add("grid")
 }
 
-btnsRadio.forEach(btn => {
+btnsRadio.forEach(btn => { 
     btn.addEventListener('click', function () {
         if (conteneur) {
             if (btn.value === "liste") {
                 conteneur.classList.remove("grid")
                 conteneur.classList.add("tableau")
-                afficherApprenants()
+                afficherApprenants() // affichage à chaque changement de choix
             } else {
                 conteneur.classList.remove("tableau")
                 conteneur.classList.add("grid")
@@ -38,18 +38,18 @@ btnsRadio.forEach(btn => {
 
 // FETCH
 
-fetch("promo.json")
+fetch("../promo.json")
     .then(response => response.json())
     .then(users => {
         apprenants = users.apprenants
-        afficherApprenants()
+        afficherApprenants() // affichage au chargement de la page
     })
 
 
 function afficherApprenants() {
-    if (!conteneur) return
+    if (!conteneur) return // sécurité pour vérifier que l'élement existe 
     conteneur.innerHTML = ""
-    const modeActuel = conteneur.classList.contains("tableau") ? "liste" : "carte"
+    const modeActuel = conteneur.classList.contains("tableau") ? "liste" : "carte" // lis la page au moment t, avant le storage
     if (modeActuel === "liste") {
         conteneur.innerHTML = `<table><thead><tr>
     <th>Nom</th>
@@ -74,7 +74,7 @@ function afficherApprenants() {
                 <p>${element.nom} ${element.prenom}</p>
                 <p>${element.ville}</p>
                 <p><a href="#" data-id="${element.id}" class="btnDetails">Détails</a></p>
-            </div>`
+            </div>` 
         })
     }
 
@@ -83,11 +83,11 @@ function afficherApprenants() {
 
     btnDetails.forEach(btn => {
         btn.addEventListener('click', function () {
-            const apprenant = apprenants.find(element => element.id === parseInt(btn.dataset.id))
+            const apprenant = apprenants.find(element => element.id === parseInt(btn.dataset.id)) // le bouton détail n'a accès qu'à l'id donc obligé de faire un find 
 
             modal.innerHTML =
                 ` <div class="info-modal">
-                    <img src="ressources/avatar/${apprenant.avatar}" alt="avatar">
+                    <img src="../ressources/avatar/${apprenant.avatar}" alt="avatar">
                     <div class="identite">
                         <p class="nomprenom">${apprenant.nom}</p>
                         <p class="nomprenom">${apprenant.prenom}</p>
