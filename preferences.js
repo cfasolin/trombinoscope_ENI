@@ -1,7 +1,7 @@
 const choixTheme = document.getElementById("theme")
 const btnSave = document.getElementById("save")
 
-choixTheme.value = affichageTheme
+choixTheme.value = affichageTheme // permet de sélectionner la bonne case en fonction du storage
 
 choixTheme.addEventListener('change', function () {
     if (choixTheme.value === "sombre") {

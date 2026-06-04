@@ -14,7 +14,7 @@ const affichageDispo = localStorage.getItem("affichage")
 const conteneur = document.getElementById("conteneur")
 const btnsRadio = document.getElementsByName("affichage")
 
-if (conteneur && affichageDispo === "carte") {
+if (conteneur && affichageDispo === "carte") { // vérifie que le conteneur existe puis check le storage pour charger le bonne affichage
     conteneur.classList.remove("tableau")
     conteneur.classList.add("grid")
 }
@@ -98,11 +98,13 @@ function afficherApprenants() {
                 <p>Anecdotes:</p>
                 "${apprenant.anecdotes}"</div>`
 
-            if (modal.style.display === "flex") {
-                modal.style.display = "none"
-            } else {
                 modal.style.display = "flex"
-            }
+
+            // if (modal.style.display === "flex") {
+            //     modal.style.display = "none"
+            // } else {
+            //     modal.style.display = "flex"
+            // }
 
         })
     })
@@ -113,7 +115,6 @@ function afficherApprenants() {
 
 }
 
-afficherApprenants()
 
 
 

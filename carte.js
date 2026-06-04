@@ -11,7 +11,9 @@ fetch("promo.json")
     .then(users => {
         users.apprenants.forEach(element => {
             if (element.coordonnees.latitude !== "") {
-                L.marker([element.coordonnees.latitude, element.coordonnees.longitude]).addTo(map)
+               const marker = L.marker([element.coordonnees.latitude, element.coordonnees.longitude]).addTo(map)
+                marker.bindPopup(`<div><p>${element.prenom} ${element.nom}<p>
+                    <img src="ressources/avatar/${element.avatar}" alt="${element.prenom}" width="120"></div>`)
             }
         })
     })
